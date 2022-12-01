@@ -1,6 +1,6 @@
 print("Loading...")
 import os
-os.system('title Crash bot By dark crystal' if os.name == 'nt' else 'clear')
+os.system('title Crash bot By darkcrystal' if os.name == 'nt' else 'clear')
 import random, string
 import asyncio
 try:
@@ -14,7 +14,7 @@ except:
 	from discord.ext import commands
 	from colorama import init, Fore; init()
 
-clear=lambda: os.system('cls && title Crash bot By LALOL' if os.name == 'nt' else 'clear')
+clear=lambda: os.system('cls && title Crash bot darkcrystal' if os.name == 'nt' else 'clear')
 bot = commands.Bot(case_insensitive=True, intents=discord.Intents.all(), command_prefix="botprefix")
 
 async def delete(obj):
