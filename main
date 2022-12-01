@@ -1,6 +1,6 @@
 print("Loading...")
 import os
-os.system('title Crash bot By LALOL' if os.name == 'nt' else 'clear')
+os.system('title Crash bot By dark crystal' if os.name == 'nt' else 'clear')
 import random, string
 import asyncio
 try:
